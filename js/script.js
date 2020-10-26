@@ -13,9 +13,9 @@ var posizioneUtente = 0;
 
 for (i = 0; i < cognomi.length; i++) {
     olEl.innerHTML += '<li>' + cognomi[i] + '</li>';
-    if (posizioneUtente == cognomi[i]) {
+    if (cognomeUtente == cognomi[i]) {
         posizioneUtente = i;
+        document.getElementById('title').innerHTML = "Il tuo cognome è in posizione numero: " +
+            (i + 1);
     }
 }
-
-document.getElementById('title').innerHTML = posizioneUtente + 1;
